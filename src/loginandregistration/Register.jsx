@@ -10,9 +10,15 @@ export const Register = (props) => {
         console.log(email);
     }
 
+    const headerStyle = {
+        color: '#00FF00', // Green color
+        fontSize: '2rem' // Larger font size
+    };
+
+
     return (
         <div className="auth-form-container">
-            <h2>Register</h2>
+            <h2 style={headerStyle}>Register</h2>
             <form className="register-form" onSubmit={handleSubmit}>
                 <label htmlFor="name">Full name</label>
                 <input value={name} name="name" onChange={(e) => setName(e.target.value)} id="name" placeholder="full Name" />
