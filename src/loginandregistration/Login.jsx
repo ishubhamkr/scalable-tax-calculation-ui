@@ -9,9 +9,18 @@ export const Login = (props) => {
         console.log(email);
     }
 
+    const headerStyle = {
+        color: '#00FF00', // Green color
+        fontSize: '2rem', // Larger font size
+        display: 'flex', // Use flexbox
+        alignItems: 'center', // Center vertically
+        justifyContent: 'center', // Center horizontally
+        minHeight: '100px' // Specify a minimum height to vertically center properly
+    };
+
     return (
         <div className="auth-form-container">
-            <h2>Login</h2>
+            <h2 style={headerStyle}>Login</h2> 
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="email">email</label>
                 <input value={email} onChange={(e) => setEmail(e.target.value)}type="email" placeholder="youremail@gmail.com" id="email" name="email" />

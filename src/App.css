@@ -20,6 +20,11 @@
   height: auto;
 }
 
+.login-header {
+  color: #00FF00; /* Green color */
+  font-size: 2rem; /* Larger font size */
+}
+
 .auth-form-container, .login-form, .register-form {
   display: flex;
   flex-direction: column;
