@@ -1,17 +1,23 @@
 .App {
-  text-align: center;
   display: flex;
-  min-height: 100vh;
   align-items: center;
-  justify-content: center;
-  color: white;
+  justify-content: space-between;
+  min-height: 100vh;
   background: linear-gradient(to bottom right, #000000, #006400); /* Gradient background */
+  padding: 0 20px; /* Added padding for better spacing */
+}
+
+.left {
+  flex: 1; /* Take up available space */
+}
+
+.right {
+  flex-shrink: 2; /* Don't allow shrinking */
 }
 
 .App-logo {
-  width: 150px;
+  width: 450px;
   height: auto;
-  margin-bottom: 20px;
 }
 
 .auth-form-container, .login-form, .register-form {
