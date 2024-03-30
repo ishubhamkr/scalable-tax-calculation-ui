@@ -29,13 +29,13 @@ The UI for the Scalable Tax Calculation Service System is developed using React.
 4. **Install Dependencies**: Use yarn to install the required dependencies.
 
     ```bash
-    yarn install
+    npm install
     ```
 
 5. **Run the UI**: Once the dependencies are installed, you can start the UI using yarn.
 
     ```bash
-    yarn start
+    npm start
     ```
 
 6. **Access the UI**: After successfully starting the UI, you can access it in your web browser at the specified address (usually http://localhost:3000).
